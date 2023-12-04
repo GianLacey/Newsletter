@@ -79,7 +79,7 @@ input[type="email"]:focus {
     outline: none;
 }
 
-#error-msg {
+#errormsg {
     color: var(--LightRed);
     font-style: italic;
     font-size: 0.65em;
@@ -142,4 +142,48 @@ input[type="submit"] {
     text-align: center;
     color: var(--Gray);
     font-size: 0.6em;
+}
+
+/*************DESKTOP************/
+@media (min-width: 700px) {
+    .logo-container {
+        width: 96px;
+        margin-bottom: 60px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .subscribe {
+        font-size: 1.05em;
+        font-style: 300;
+    }
+
+    form {
+        width: 638px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input[type="email"] {
+        width: 420px;
+        height: 55px;
+        font-size: 0.8em;
+    }
+
+    #errormsg {
+        text-align: left;
+        padding-left: 24px;
+    }
+    input[type="submit"] {
+        width: 200px;
+        height: 55px;
+        margin-bottom: 90px;
+        font-size: 0.8em;
+    }
+
+    .dashboard-container {
+        width: 640px;
+        margin-bottom: 74px;
+    }
 }
